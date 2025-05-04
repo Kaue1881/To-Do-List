@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+:root{
+    --text-color:rgb(160, 0, 160);
+    --bg-color: rgb(160, 0, 160);
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+main{
+
+    width: 100%;
+    padding: 0 40px;
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+input{
+    text-align: center;
+    height: 40px;
+}
+
+button{
+    background-color: rgb(160, 0, 160);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+p{
+    font-size: 1.1rem;
+}
+
+main > .box-apresentation{
+    text-align: center;
+    width: max-content;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+.box-apresentation > input {
+
+    min-width: 100%;
+    border: 2px solid lightgrey;
+    
+}
+
+.box-apresentation > input:focus{
+    outline: none;
+}
+.box-apresentation h1{
+    color: var(--text-color);
+}
+
+.box-ToDoList{
+    width: 100%;
+    text-align: left;
+}
+
+#list{
+    width: 100%;
+    max-height: 370px;
+    overflow-y: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+    padding: 15px 0;
+}
+
+#list > section{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 5px solid lightgray;
+    padding: 5px;
+}
+
+#list > section > button {
+
+    width: 100px;
+    height: 30px;
+}
+
+main > .box-AddToDo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row nowrap;
+    width: 100%;
+    margin: 40px 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.box-AddToDo > input{
+
+    border: 3px solid rgb(160, 0, 160);
+    transition: .7s;
+    padding: 0 5px;
+}
+
+.box-AddToDo > input:focus{
+    transition: .7s;
+    min-width: 200px;
+    outline: none;
+}
+
+.box-AddToDo > button {
+    height: 40px;
+    width: 100px;
+}

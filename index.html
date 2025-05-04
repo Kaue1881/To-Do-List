@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do list</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main>
+        <div class="box-apresentation">
+            <h1>To-Do List</h1>
+            <p>Crie uma lista de afazeres, fácil e rápido.</p>
+            <input type="text" placeholder="Pesquisar por tarefa">
+        </div>
+        <div class="box-ToDoList">
+            <h3>Lista de Afazeres: </h3>
+            <div id="list"></div>
+        </div>
+        <div class="box-AddToDo">
+            <input id="inputADD" type="text" placeholder="Adicione uma tarefa">
+            <button onclick="CriarItem();">Criar</button>
+        </div>
+    </main>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
