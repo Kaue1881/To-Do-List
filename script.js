@@ -22,9 +22,11 @@ function CriarItem() {
 
         inputNomeItem.value = "";
     }
+
     //A função deletar deve estar dentro da func CriarItem
     //Dessa forma ele sempre vai atualizar a quantidade de 
     //Items que o deletar podera ampliar
+    
     const btnDeletar = document.querySelectorAll('#deletar');
     btnDeletar.forEach(function(botao) {
         botao.addEventListener('click', function(e) {
