@@ -106,7 +106,7 @@ main > .box-AddToDo{
     width: 100%;
     margin: 40px 0;
     position: absolute;
-    bottom: 0;
+    bottom: 50px;
     left: 0;
 }
 
