@@ -15,6 +15,8 @@ body{
     height: 100vh;
     display: flex;
     justify-content: center;
+    background-color: rgb(22, 22, 22);
+    color: white;
 }
 
 main{
@@ -58,7 +60,7 @@ main > .box-apresentation{
 
     min-width: 100%;
     border: 2px solid lightgrey;
-    
+    margin-top: 20px;
 }
 
 .box-apresentation > input:focus{
@@ -70,7 +72,6 @@ main > .box-apresentation{
 
 .box-ToDoList{
     width: 100%;
-    text-align: left;
 }
 
 #list{
@@ -89,7 +90,12 @@ main > .box-apresentation{
     justify-content: space-between;
     align-items: center;
     border-left: 5px solid lightgray;
-    padding: 5px;
+    background-color: transparent;
+    padding: 10px;
+}
+
+#list > section:hover{
+    background-color: rgba(211, 211, 211, 0.027);
 }
 
 #list > section > button {
