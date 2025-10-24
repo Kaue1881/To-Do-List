@@ -63,8 +63,8 @@ document.addEventListener("keydown", function(e){
 criarbtn.addEventListener("click", () => {
     CriarItem();
 });
-//filtro por pesquisa - chat
 
+//filtro por pesquisa
 inputfiltro.addEventListener("input", () => {
     const termo = inputfiltro.value.toLowerCase();
     const itens = document.querySelectorAll(".itemNome");

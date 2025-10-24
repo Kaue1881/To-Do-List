@@ -1,4 +1,4 @@
-@import url('./estilos/addtodo.css');
-@import url('./estilos/apresentation.css');
-@import url('./estilos/geral.css');
-@import url('./estilos/todolist.css');
+@import url('addtodo.css');
+@import url('apresentation.css');
+@import url('geral.css');
+@import url('todolist.css');
