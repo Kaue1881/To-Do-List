@@ -1,0 +1,41 @@
+.box-ToDoList{
+    width: 100%;
+    background-color: rgb(32, 31, 32);
+    padding: 10px 24px;
+    border-radius: 7px;
+}
+
+#list{
+    max-height: 340px;
+    overflow-y: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+    padding: 15px 0;
+}
+
+#list > section{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 5px solid lightgray;
+    background-color: transparent;
+    padding: 10px;
+}
+
+#list > section:hover{
+    background-color: rgba(211, 211, 211, 0.027);
+}
+
+.deletar{
+    font-weight: bolder;    
+    width: 100px;
+    height: 30px;
+}
+
+@media (min-width: 1000px) {
+  .box-ToDoList{
+    max-width: 700px;
+  }
+}

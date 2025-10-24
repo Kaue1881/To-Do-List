@@ -1,0 +1,24 @@
+.box-apresentation{
+    text-align: center;
+    max-width: 1200px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+.box-apresentation > input {
+
+    max-width: 300px;
+    width: 200px;
+    border: 2px solid lightgrey;
+    margin-top: 20px;
+}
+
+.box-apresentation > input:focus{
+    outline: none;
+}
+.box-apresentation h1{
+    color: var(--text-color);
+}

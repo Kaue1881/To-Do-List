@@ -1,4 +1,5 @@
-function CriarItem() {
+//Cria uma tarefa
+function CriarItem(){
 
     const Lista = document.querySelector('#list');
     const itemLista = document.createElement('section');
@@ -17,8 +18,9 @@ function CriarItem() {
         nomeItem.innerText = inputNomeItem.value;
 
         itemLista.appendChild(buttonItem);
-        buttonItem.innerText = "Deletar"
+        buttonItem.innerText = "X"
         buttonItem.setAttribute("id", "deletar");
+        buttonItem.setAttribute("class", "deletar");
 
         inputNomeItem.value = "";
     }
@@ -34,3 +36,28 @@ function CriarItem() {
         });
     });
 }
+
+const criarbtn = document.querySelector("#criarbtn");
+const inputadd = document.querySelector("#inputADD");
+const inputfiltro = document.querySelector("#filtro");
+
+//Tecla Enter -> Cria uma tarefa
+document.addEventListener("keydown", function(e){
+    if(e.key === "Enter"){
+        CriarItem();
+    }
+});
+//Foca no inputadd
+document.addEventListener("keydown", function(e){
+    if(document.activeElement == inputfiltro){
+        return;
+    } else {
+        if(e.key.length == 1){
+            inputadd.focus();
+        }
+    }
+});
+//Clicar no criarbtn -> Cria uma tarefa
+criarbtn.addEventListener("click", () => {
+    CriarItem();
+});

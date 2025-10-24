@@ -1,0 +1,32 @@
+
+
+.box-AddToDo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row nowrap;
+    width: 100%;
+    margin: 40px 0;
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+}
+
+.box-AddToDo > input{
+
+    border: 3px solid rgb(160, 0, 160);
+    transition: .7s;
+    padding: 0 5px;
+}
+
+.box-AddToDo > input:focus{
+    transition: .7s;
+    min-width: 200px;
+    outline: none;
+}
+
+
+.box-AddToDo > button {
+    height: 40px;
+    width: 100px;
+}
