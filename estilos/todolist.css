@@ -3,7 +3,7 @@
     background-color: rgb(32, 31, 32);
     padding: 10px 24px;
     border-radius: 7px;
-    height: 380px;
+    height: 400px;
 }
 
 #list{
@@ -24,20 +24,36 @@
     border-left: 5px solid lightgray;
     background-color: transparent;
     padding: 10px;
+    gap: 50px;
+    height: min-content;
 }
 
 #list > section:hover{
     background-color: rgba(211, 211, 211, 0.027);
 }
 
+.itemNome{
+  max-width: 100ch;
+}
+
 .deletar{
     font-weight: bolder;    
-    width: 100px;
+    min-width: 100px;
     height: 30px;
 }
 
-@media (min-width: 1000px) {
+
+@media (min-width: 800px) {
   .box-ToDoList{
     max-width: 700px;
   }
+}
+
+@media (max-width: 700px){
+  .deletar{
+    min-width: 70px;
+  }
+  .itemNome{
+  max-width: 20ch !important;
+}
 }

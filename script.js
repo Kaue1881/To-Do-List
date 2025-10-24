@@ -2,10 +2,10 @@
 function CriarItem(){
 
     const Lista = document.querySelector('#list');
-    const itemLista = document.createElement('section');
-    const nomeItem = document.createElement('p');
-    const buttonItem = document.createElement('button');
-    let inputNomeItem = document.querySelector('#inputADD');
+    const itemLista = document.createElement('section'); // tarefa
+    const nomeItem = document.createElement('p'); // nome da tarefa
+    const buttonItem = document.createElement('button'); // btn deletar
+    let inputNomeItem = document.querySelector('#inputADD'); //input de add tarefa
 
     
     if (inputNomeItem.value == "") {
@@ -17,6 +17,7 @@ function CriarItem(){
         //Nome da tarefa = p
         itemLista.appendChild(nomeItem);
         nomeItem.innerText = inputNomeItem.value;
+        nomeItem.setAttribute("class", "itemNome");
         //cria btn X = Deletar
         itemLista.appendChild(buttonItem);
         buttonItem.innerText = "X"
@@ -62,3 +63,18 @@ document.addEventListener("keydown", function(e){
 criarbtn.addEventListener("click", () => {
     CriarItem();
 });
+//filtro por pesquisa - chat
+
+inputfiltro.addEventListener("input", () => {
+    const termo = inputfiltro.value.toLowerCase();
+    const itens = document.querySelectorAll(".itemNome");
+
+    itens.forEach(itemLista => {
+        const texto = itemLista.textContent.toLowerCase();
+        if (texto.match(termo)) {
+            itemLista.parentElement.style.display = "flex";
+        } else {
+            itemLista.parentElement.style.display = "none";
+        }
+    });
+})
