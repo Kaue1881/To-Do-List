@@ -11,12 +11,13 @@ function CriarItem(){
     if (inputNomeItem.value == "") {
         alert('coloque uma informação válida');
     } else {
+        //Cria lista = section
         Lista.appendChild(itemLista);
         itemLista.setAttribute('id', 'item');
-
+        //Nome da tarefa = p
         itemLista.appendChild(nomeItem);
         nomeItem.innerText = inputNomeItem.value;
-
+        //cria btn X = Deletar
         itemLista.appendChild(buttonItem);
         buttonItem.innerText = "X"
         buttonItem.setAttribute("id", "deletar");

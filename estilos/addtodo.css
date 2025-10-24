@@ -28,4 +28,5 @@
 .box-AddToDo > button {
     height: 40px;
     width: 100px;
+    font-weight: 500;
 }
